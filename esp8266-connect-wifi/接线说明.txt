@@ -1,0 +1,6 @@
+esp8266 arduino
+3V3         3V3
+GND        GND
+RX            D3
+TX             D2
+EN            3V3
