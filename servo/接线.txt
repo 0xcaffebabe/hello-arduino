@@ -1,0 +1,4 @@
+Servo arduino
+棕线 GND
+红线 5V
+黄线 D9

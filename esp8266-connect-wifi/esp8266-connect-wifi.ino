@@ -3,11 +3,11 @@
 
 #define WIFI_TX       3
 #define WIFI_RX       2
-#define LED           13
+#define LED           10
 SoftwareSerial wifi(WIFI_RX, WIFI_TX);   //RX, TX
 //char[] data = "";
 void setup() {
-  pinMode(13, OUTPUT);
+  pinMode(LED, OUTPUT);
   Serial.begin(9600);
   Serial.println("hardware serial!");
   wifi.begin(115200);
@@ -37,11 +37,11 @@ void loop() {
     if (c == 'O' && inProcess){
       Serial.println("open");
       inProcess = false;
-      digitalWrite(13, HIGH);
+      digitalWrite(LED, HIGH);
     }else if (c == 'C' && inProcess){
       Serial.println("close");
       inProcess = false;
-      digitalWrite(13, LOW);
+      digitalWrite(LED, LOW);
     }
   }
   
