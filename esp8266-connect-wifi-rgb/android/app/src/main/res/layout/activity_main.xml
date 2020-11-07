@@ -15,32 +15,72 @@
         android:orientation="vertical"
         android:gravity="center"
         >
-        <Button
-            android:id="@+id/openBtn"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="oepn"
-            tools:layout_editor_absoluteX="128dp"
-            tools:layout_editor_absoluteY="305dp" />
+            android:layout_marginTop="25sp"
+            android:text="R"/>
+        <SeekBar
+            android:id="@+id/sb1"
+            android:min="0"
+            android:max="255"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
-
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:text="G"/>
+        <SeekBar
+            android:id="@+id/sb2"
+            android:min="0"
+            android:max="255"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"/>
+        <SeekBar
+            android:id="@+id/sb3"
+            android:min="0"
+            android:max="255"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
         <Button
-            android:id="@+id/closeBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="close"
-            tools:layout_editor_absoluteX="128dp"
-            tools:layout_editor_absoluteY="305dp" />
+            android:id="@+id/randomBtn"
+            android:text="随机"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetBtn"
+            android:text="重置"/>
     </LinearLayout>
 
 </LinearLayout>
