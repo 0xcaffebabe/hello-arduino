@@ -55,5 +55,5 @@ void loop() {
   lcd.setCursor(0,0);
   lcd.print(cm);
   lcd.print("cm");
-  delay(1000);
+  delay(1000); 
 }
